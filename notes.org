@@ -1,0 +1,3 @@
+* start nrepl and connect from cider
+bb --nrepl-server 1667
+cider-connect-clj from eamcs
