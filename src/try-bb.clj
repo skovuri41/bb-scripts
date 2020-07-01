@@ -72,3 +72,12 @@
 (:options (parse-opts *command-line-args* cli-options))
 (:options
  (parse-opts ["-p" "65537" "-h" "-vvvvv" "--invalid-opt"] cli-options))
+
+(defn run-shell-cmd [ & args]
+  (let [{:keys [exit out err] :as result} (apply shell/sh args)]
+    (when-not (zero? exit)
+      (println "ERROR running command\nSTDOUT:")
+      (println out "\nSTDERR:")
+      (println err)
+      (throw (ex-info "Error while runing shell command" {:status exit})))
+    result))

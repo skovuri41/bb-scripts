@@ -1,3 +1,9 @@
 * start nrepl and connect from cider
 bb --nrepl-server 1667
 cider-connect-clj from eamcs
+* reference
+[[https://github.com/mauricioszabo/repl-tooling/blob/82e11b5aaca97cd5a75c10d93b681e77f46c6304/scripts/deploy.bb][repl-tooling/deploy.bb at 82e11b5aaca97cd5a75c10d93b681e77f46c6304 ·
+mauricio...]]
+
+[[https://github.com/klapuch/dev-bot/blob/2300950ecc12a3cc7d236435bbd6cef78090ad30/src/dev_bot/core.clj][dev-bot/core.clj at 2300950ecc12a3cc7d236435bbd6cef78090ad30 ·
+klapuch/dev-bo...]]
